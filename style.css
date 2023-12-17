@@ -21,7 +21,7 @@ th, td {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1;
     flex-direction: column;
-    height: 350px;
+    height: 320px;
     width: 260px;
     gap: 10px;
     justify-content: center;
@@ -54,16 +54,21 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 250px;
 }
 
 #newBookButton{
     margin-top: 10px;
-    background-color: purple;
+    background-color: rgb(153, 108, 153);
     color: white;
     border-radius: 50%;
     height: 50px;
     width: 180px;
+    font-size: 15px;
+}
+
+
+#newBookButton:hover{
+    background-color: rgb(142, 80, 142);
 }
 
 #addBookButton, #closeForm{
@@ -76,8 +81,17 @@ body{
     right: 0;
 }
 
+
+#closeForm:hover{
+    background-color: lightgray;
+}
+
 #addBookButton{
     background-color: lightblue;
+}
+
+#addBookButton:hover{
+    background-color: rgb(134, 184, 201);
 }
 
 button, #addBookButton{
