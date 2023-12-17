@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+
+<body> 
+    <button id="newBookButton">ADD NEW BOOK</button>
+
+    <!-- Modal for entering book details -->
+    <div id="newBook">
+        <h2>Add a New Book</h2>
+        <form id="newBookForm" onsubmit="return addBookToLibrary()">
+            <input type="text" id="title" name="title" placeholder="Title"><br>
+
+            <input type="text" id="author" name="author" placeholder="Author"><br>
+
+            <input type="number" id="pages" name="pages" placeholder="Pages"><br>
+
+            <label for="read">Read:</label>
+            <input type="checkbox" id="read" name="read"><br>
+
+            <input id="addBookButton" type="submit" value="Add Book">
+        </form>
+        <button id="closeForm">Close</button>
+    </div>
+    <div id="overlay"></div>
+
+    <div id="libraryTable"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
